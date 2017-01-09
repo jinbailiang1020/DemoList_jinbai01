@@ -7,6 +7,8 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -26,6 +28,24 @@ public class DispatchEventTestActivity extends FragmentActivity {
     }
     private void initView() {
         view_pager = (ViewPager)findViewById(R.id.view_pager);
+        view_pager.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+
+                    case MotionEvent.ACTION_DOWN:
+                        Log.i("DispatchEvent","view_pagerOnTouchListener ACTION_DOWN");
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        Log.i("DispatchEvent","view_pagerOnTouchListener ACTION_MOVE");
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        Log.i("DispatchEvent","view_pagerOnTouchListener ACTION_UP");
+                        break;
+                }
+                return  false;
+            }
+        });
     }
 
     private void setViewpager() {

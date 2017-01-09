@@ -16,12 +16,16 @@ import com.example.jinbailiang.dispatch_event.DispatchEventTestActivity;
 import com.example.jinbailiang.expandablelist.ExpandableListTestActivity;
 import com.example.jinbailiang.fresco_test.FrescoTestActivity;
 import com.example.jinbailiang.otherinfomation.OtherInfoActivity;
+import com.example.jinbailiang.percent_layout.PercentLayoutActivity;
 import com.example.jinbailiang.photocropupload.PhotoCropUploadActivity;
 import com.example.jinbailiang.richeditor.RichEditorActicity;
 import com.example.jinbailiang.settings.MySettingsActivity;
 
 import java.util.ArrayList;
 
+/**
+ * https://github.com/jinbailiang1020/DemoList_jinbai
+ */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private GridView gv_Main;
@@ -50,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mNameList.add("二维数组");
         mNameList.add("浏览器");
         mNameList.add("pakageInfo");
-        mNameList.add("demo06");
+        mNameList.add("PercentLayout");
         mNameList.add("fresco图片");
         mNameList.add("custom_view");
         mNameList.add("事件分发");
@@ -113,6 +117,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 4:
                 startActivity(new Intent(MainActivity.this,MySettingsActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(MainActivity.this,PercentLayoutActivity.class));
                 break;
             case 6:
                 startActivity(new Intent(MainActivity.this,FrescoTestActivity.class));

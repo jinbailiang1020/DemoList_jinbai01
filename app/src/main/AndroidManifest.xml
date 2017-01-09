@@ -64,7 +64,8 @@
         -->
 
         <activity android:name="com.example.jinbailiang.custom_view.CustomViewTestActivity" />
-        <activity android:name="com.example.jinbailiang.dispatch_event.DispatchEventTestActivity"></activity>
+        <activity android:name="com.example.jinbailiang.dispatch_event.DispatchEventTestActivity" />
+        <activity android:name="com.example.jinbailiang.percent_layout.PercentLayoutActivity"></activity>
     </application>
 
 </manifest>

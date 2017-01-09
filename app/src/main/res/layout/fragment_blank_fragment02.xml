@@ -1,14 +1,26 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.jinbailiang.dispatch_event.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9911aa11"
+    android:clickable="true"
+    android:id="@+id/framLayout"
+    android:orientation="vertical"
     tools:context="com.example.jinbailiang.settings.BlankFragment02">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:background="#44556644"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment02"
-        android:gravity="center" />
+        android:layout_height="80dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:text="TestView" />
 
-</FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:text="button" />
+
+</com.example.jinbailiang.dispatch_event.MyLinearLayout>

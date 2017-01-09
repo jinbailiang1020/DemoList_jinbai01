@@ -45,7 +45,7 @@ dependencies {
     compile 'com.android.support:support-v4:23.1.1'*/
 
 
-
+    compile 'com.zhy:percent-support-extends:1.1.1'//百分比布局库
     compile    'com.facebook.fresco.helper:fresco-helper:1.1.8'
     compile    'com.facebook.fresco.helper:fresco-photoview:1.1.6'
     compile    'com.google.android.gms:play-services-appindexing:9.8.0'
