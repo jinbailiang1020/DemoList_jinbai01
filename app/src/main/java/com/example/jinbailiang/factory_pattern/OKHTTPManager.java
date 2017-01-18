@@ -4,7 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * Created by yess on 2017-01-18.
+ * Created by jinbailiang on 2017-01-18.
  */
 
 public class OKHTTPManager implements  HTTPManager {
