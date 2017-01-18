@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.example.jinbailiang.ListViewItemClickActivity;
 import com.example.jinbailiang.adapter.MyGridAdapter;
 import com.example.jinbailiang.custom_view.CustomViewTestActivity;
 import com.example.jinbailiang.demos_jinbai.R;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mNameList.add("fresco图片");
         mNameList.add("custom_view");
         mNameList.add("事件分发");
-        mNameList.add("demo10");
+        mNameList.add("listViewItemClick");
          ArrayList<Integer> mDrawableList = new ArrayList<Integer>();
             mDrawableList.add(R.mipmap.ic_launcher);
         mDrawableList.add(R.mipmap.ic_launcher);
@@ -128,6 +129,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(new Intent(MainActivity.this, CustomViewTestActivity.class));
             case 8:
                 startActivity(new Intent(MainActivity.this, DispatchEventTestActivity.class));
+            case 9:
+                startActivity(new Intent(MainActivity.this, ListViewItemClickActivity.class));
         }
     }
 }

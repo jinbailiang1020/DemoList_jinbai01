@@ -65,7 +65,12 @@
 
         <activity android:name="com.example.jinbailiang.custom_view.CustomViewTestActivity" />
         <activity android:name="com.example.jinbailiang.dispatch_event.DispatchEventTestActivity" />
-        <activity android:name="com.example.jinbailiang.percent_layout.PercentLayoutActivity"></activity>
+        <activity android:name="com.example.jinbailiang.percent_layout.PercentLayoutActivity" />
+        <activity android:name="com.example.jinbailiang.ListViewItemClickActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

@@ -17,10 +17,9 @@
         android:id="@+id/grid_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_gravity="center"
         android:textSize="18sp"
-        android:text="啊哈哈还是"
+        android:text="s手机设计师"
         android:layout_marginTop="4dip"
         >
     </TextView>
