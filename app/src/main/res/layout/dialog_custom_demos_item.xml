@@ -3,13 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="#66020202"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.facebook.drawee.view.SimpleDraweeView
+<!--    <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/simpleDraweeView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:actualImageScaleType="centerInside"/>
+        app:actualImageScaleType="centerInside"/>-->
+
+    <TextView
+        android:text="I积极附近覅及少时诵诗书所所所所所所所所所所所所"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioButton
+        android:text="RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/radioButton" />
+
+    <CheckedTextView
+        android:text="CheckedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/checkedTextView" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/spinner" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/button2" />
 
 </LinearLayout>
