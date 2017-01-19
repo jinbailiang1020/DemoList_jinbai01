@@ -2,6 +2,8 @@ package com.example.jinbailiang.application;
 
 import android.app.Application;
 
+import com.facebook.fresco.helper.Phoenix;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -25,6 +27,10 @@ public class MyApplication extends Application {
         threadPoolExecutor = new ThreadPoolExecutor(2, 4, 3,
                 TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(3),
                 new ThreadPoolExecutor.DiscardOldestPolicy());
+        Caze2Handler crashHandler = Caze2Handler.getInstance();
+        crashHandler.init(getApplicationContext());
+
+        Phoenix.init(this); // Context  Fresco init
 }
 
     public  static ThreadPoolExecutor getThreadPoolExecutor(){

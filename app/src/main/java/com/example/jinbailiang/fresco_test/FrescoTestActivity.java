@@ -26,7 +26,6 @@ public class FrescoTestActivity extends Activity {
         setContentView(R.layout.activity_main_fresco);
 
         long startTime = currentTimeMillis();
-        Phoenix.init(this); // Context
         long result = System.currentTimeMillis() - startTime;
         ((TextView) findViewById(R.id.tv_init_count_time)).setText("初始化耗时：" + result + "ms");
 

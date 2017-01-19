@@ -11,6 +11,7 @@ import android.widget.GridView;
 
 import com.example.jinbailiang.ListViewItemClickActivity;
 import com.example.jinbailiang.adapter.MyGridAdapter;
+import com.example.jinbailiang.common_utils.CustomDomesActivity;
 import com.example.jinbailiang.custom_view.CustomViewTestActivity;
 import com.example.jinbailiang.demos_jinbai.R;
 import com.example.jinbailiang.dispatch_event.DispatchEventTestActivity;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mNameList.add("custom_view");
         mNameList.add("事件分发");
         mNameList.add("listViewItemClick");
+        mNameList.add("常用工具");
          ArrayList<Integer> mDrawableList = new ArrayList<Integer>();
             mDrawableList.add(R.mipmap.ic_launcher);
         mDrawableList.add(R.mipmap.ic_launcher);
@@ -71,6 +73,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mDrawableList.add(R.mipmap.ic_launcher);
         mDrawableList.add(R.mipmap.ic_launcher);
         mDrawableList.add(R.mipmap.ic_launcher);
+        mDrawableList.add(R.mipmap.ic_launcher);
+        mDrawableList.add(R.mipmap.ic_launcher);
+        mDrawableList.add(R.mipmap.ic_launcher);
+        mDrawableList.add(R.mipmap.ic_launcher);
+
 
         gv_Main.setAdapter(new MyGridAdapter(this, mNameList, mDrawableList));
     }
@@ -127,10 +134,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 7:
                 startActivity(new Intent(MainActivity.this, CustomViewTestActivity.class));
+                break;
             case 8:
                 startActivity(new Intent(MainActivity.this, DispatchEventTestActivity.class));
+                break;
             case 9:
                 startActivity(new Intent(MainActivity.this, ListViewItemClickActivity.class));
+                break;
+            case 10:
+                startActivity(new Intent(MainActivity.this, CustomDomesActivity.class));
+                break;
+
+
         }
     }
 }
